@@ -1,0 +1,41 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+        <div style="width:100%;height:100%;max-width:100%">
+                <div id="game"></div>
+        </div>
+        
+        <script type="text/javascript">
+        EJS_player = '#game';
+        EJS_gameName = 'Bomberman';
+        EJS_gameUrl = 'bomberman5.sfc'; // Url to Game rom
+        EJS_core = 'snes';
+        EJS_mouse = false; // SNES Mouse
+        EJS_multitap = true; // SNES Multitap
+        EJS_onGameStart = () => console.log('jogo iniciado')
+
+        // Netplay configs
+        EJS_gameID = 1; // ID in your website, required for netplay.
+        EJS_oldCores = true;
+        EJS_netplayUrl = "https://larrire-emulatorjs-server.onrender.com";
+        EJS_oldEJSNetplayServer = true
+        EJS_maxParticipantsAllowed = 5
+        EJS_pathtodata = '/data/';
+
+        window.onload = () => console.log('v2.7')
+
+                // loader.js
+                // https://www.emulatorjs.com/loader.js
+                // https://raw.githubusercontent.com/larrire/emulatorjs/main/data/loader.js
+
+                // webrtc-adapter.js
+                // https://www.emulatorjs.com/webrtc-adapter.js
+                // https://raw.githubusercontent.com/larrire/emulatorjs/main/data/webrtc-adapter.js
+
+        </script>
+        <script src="https://www.emulatorjs.com/loader.js"></script>
+        <script src="https://www.emulatorjs.com/webrtc-adapter.js"></script>
+</body>
+</html>
